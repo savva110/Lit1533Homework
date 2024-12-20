@@ -1,0 +1,191 @@
+/* Основные стили */
+body {
+    font-family: "Shantell Sans", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Скрытые настройки */
+.settings.hide {
+    display: none;
+}
+
+/* Форма выбора класса и группы */
+.getClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    max-width: 600px;
+    margin-top: -10px;
+}
+
+.getClass select {
+    background: #222;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.getClass input[type="button"] {
+    background: #00ff99;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.getClass input[type="button"]:hover {
+    background: #00cc7a;
+}
+
+/* Таблица расписания */
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #111;
+    border: 1px solid #444;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.schedule table th,
+.schedule table td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.schedule table th {
+    background: #333;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.schedule table td {
+    font-size: 1.5em;
+}
+
+.schedule table tr:nth-child(even) {
+    background: #222;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* .schedule table tr:hover {
+    background: #444;
+} */
+
+/* Домашние задания */
+.homework {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: -10px;
+}
+
+.homework ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.homework ul li {
+    /* flex: 0 1 calc(14.28% - 20px); */
+    text-align: center;
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.homework ul li:hover {
+    transform: scale(1.05);
+}
+
+.homework ul li a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: 500;
+    font-size: 2.75em;
+    transition: color 0.3s;
+}
+
+.homework ul li a:hover {
+    color: #00cc7a;
+}
+
+/* Стили для select */
+select {
+    width: 200px;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #444;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Плавное изменение */
+}
+
+/* Анимация для выпадающего меню */
+select:focus {
+    outline: none;
+    /* border-color: #4caf50;  */
+}
+
+/* Анимация появления опций */
+/* option {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+select:focus option {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.accept {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accept:hover {
+    background-color: #4caf50;
+} */
